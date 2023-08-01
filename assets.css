@@ -1,4 +1,5 @@
 * {
+    /*sets font and background color for full page*/
     font-family: Arial, Helvetica, sans-serif;
     background-color: antiquewhite;
 }
@@ -25,7 +26,7 @@ header nav {
 
 nav a {
     padding: 10px;
-    font-weight: bold;
+    font-weight: bold; /*bolds link text*/
 }
 
 header a {
@@ -40,19 +41,21 @@ section {
 
 section h2 {
     position: absolute;
-    top: 0vh;
-    left: -5vw;
 }
 
 .about{
     padding: 20px;
-    position: relative;
     display: flex;
     flex-wrap: nowrap;
 }
 
+.about h2 {
+    top: 0vh;
+    left: -5vw;
+}
+
 .about img {
-    width: 21vw;
+    width: 21vw; /*declaring one dimension of the image makes the other dimension automatically set to retain aspect ratio*/
     margin-top: 40px;
     padding-left: 20px;
 }
@@ -66,13 +69,14 @@ section h2 {
     width: 50%;
 }
 
+/*makes about section responsive to screen size*/
 @media screen and (max-width: 992px) {
     .about {
         flex-wrap: wrap;
     }
+    /*heading will wrap under image*/
     .about img {
         width: 41vw;
-
     }
     .about h3 {
         width: 100%;
@@ -87,10 +91,16 @@ section h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    position: relative;
     left: 10vw;
 }
 
+/*picture element position is set to relative to allow for absolute positioning of child elements*/
+picture {
+    position: relative;
+    text-align: center;
+}
+
+/*sizes images in work section and makes them slightly transparent*/
 .work img {
     height: 50vh;
     width: 27vw;
@@ -98,51 +108,52 @@ section h2 {
     opacity: .75;
 }
 
+/*images in work section will have a border and become opaque on hover*/
 .work img:hover {
     border: 5px solid darkblue;
     opacity: 1;
 } 
 
-picture {
-    position: relative;
-    text-align: center;
-}
-
+/*first image in work section is wider*/
 .top img {
     width: 60vw;
-    margin-top: 10vh;=
+    margin-top: 10vh;
 }
 
 .work h2 {
     left: -13vw;
-    top: -5vh;
+    top: -5vh; 
+    /*negative values move the heading left and up*/
 }
 
 .work h3 {
     background-color: grey;
     border: 2px solid orange;
-    position: absolute;
+    position: absolute; /*headings in work section are absolutely positioned to overlay over images*/
     left: 5%;
     top: 0%;
     width: 50%;
     padding: 5px;
 }
 
+/*heading for top image is positioned independently to adjust for different image dimensions*/
 .top h3 {
-    position: absolute;
     left: 20%;
     top: 15%;
 }
 
+/*makes image layout in work section responsive to screen size*/
 @media screen and (max-width: 992px) {
     .work img {
         width: 60vw;
     }
+    /*images will stack to provide better visibility on smaller screens*/
 }
 
 footer {
     padding-top: 20px;
     border-top: 10px solid saddlebrown;
+    /*styling for nav and anchor elements in the footer comes from nav and nav a styling further up*/
 }
 
 
