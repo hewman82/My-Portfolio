@@ -20,7 +20,7 @@ nav {
 
 header nav {
     border-top: 10px solid saddlebrown;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 nav a {
@@ -89,7 +89,6 @@ section h2 {
     flex-wrap: wrap;
     position: relative;
     left: 10vw;
-    background-color: blue;
 }
 
 .work img {
