@@ -37,7 +37,7 @@ nav a {
     flex-wrap: nowrap;
 }
 
-#profile {
+.about img {
     height: 60vh;
     width: 21vw;
     margin-top: 5px;
@@ -57,7 +57,7 @@ h3 {
     .about {
         flex-wrap: wrap;
     }
-    #profile {
+    .about img {
         height: 70vh;
         width: 41vw;
 
