@@ -103,7 +103,7 @@ section h2 {
     opacity: 1;
 } 
 
-div {
+picture {
     position: relative;
     text-align: center;
 }
@@ -140,7 +140,7 @@ div {
     }
 }
 
-.contact {
+footer {
     padding-top: 20px;
     border-top: 10px solid saddlebrown;
 }
