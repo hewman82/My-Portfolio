@@ -38,7 +38,6 @@ nav a {
 }
 
 .about img {
-    height: 60vh;
     width: 21vw;
     margin-top: 5px;
     padding-left: 20px;
@@ -58,7 +57,6 @@ h3 {
         flex-wrap: wrap;
     }
     .about img {
-        height: 70vh;
         width: 41vw;
 
     }
@@ -67,4 +65,3 @@ h3 {
         margin-left: 20px;
     }
 }
-
