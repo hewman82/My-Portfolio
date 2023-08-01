@@ -123,6 +123,12 @@ h4 {
     top: 15%;
 }
 
+@media screen and (max-width: 992px) {
+    .work img {
+        width: 60vw;
+    }
+}
+
 
 
 
