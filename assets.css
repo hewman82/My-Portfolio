@@ -28,10 +28,13 @@ nav a {
     text-decoration: none;
 }
 
+section {
+    margin-left: 5vw;
+    border-left: 5px solid green;
+}
+
 .about{
     padding: 10px;
-    border-left: 5px solid green;
-    margin-left: 30px;
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -65,3 +68,23 @@ h3 {
         margin-left: 20px;
     }
 }
+
+.work {
+    text-align: center;
+    padding: 20px 0px 20px 100px;
+}
+
+.work img {
+    height: 50vh;
+    border: 5px solid darkblue;
+    padding: 5px;
+
+}
+.grid img {
+    width: 26vw;
+}
+.top img {
+    width: 60vw;
+}
+
+
