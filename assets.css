@@ -59,6 +59,7 @@ section h2 {
 
 .about h3 {
     border: 5px solid lawngreen;
+    border-radius: 25px;
     padding: 20px;
     margin-left: 50px;
     height: 20%;
