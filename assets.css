@@ -81,7 +81,7 @@ section h2 {
 }
 
 .work {
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 20px;
     width: 65vw;
     display: flex;
@@ -89,19 +89,20 @@ section h2 {
     flex-wrap: wrap;
     position: relative;
     left: 10vw;
+    background-color: blue;
 }
 
 .work img {
     height: 50vh;
-    
-    padding: 5px;
     width: 27vw;
     margin: 5px;
+    opacity: .75;
 }
 
 .work img:hover {
     border: 5px solid darkblue;
-}
+    opacity: 1;
+} 
 
 div {
     position: relative;
@@ -110,20 +111,25 @@ div {
 
 .top img {
     width: 60vw;
-    margin-top: 10vh;
+    margin-top: 10vh;=
+}
+
+.work h2 {
+    left: -13vw;
+    top: -5vh;
 }
 
 .work h3 {
-    background-color: orange;
+    background-color: grey;
+    border: 2px solid orange;
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: 0%;
-    width: 25%;
+    width: 50%;
     padding: 5px;
 }
 
-.top h3{
-    width: 50%;
+.top h3 {
     position: absolute;
     left: 20%;
     top: 15%;
@@ -140,17 +146,6 @@ div {
     border-top: 10px solid saddlebrown;
 }
 
-#facebook {
-    color: darkblue;
-}
-
-#gmail {
-    color: green;
-}
-
-#twitter {
-    color: rgb(16, 47, 221);
-}
 
 
 
