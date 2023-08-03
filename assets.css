@@ -49,7 +49,7 @@ section h2 {
 .about {
     padding: 20px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /*items in the section are displayed side by side instead of one under the other at full screen width*/
 }
 
 .about h2 {
@@ -73,35 +73,22 @@ section h2 {
     width: 50%;
 }
 
-/*makes about section responsive to screen size*/
-@media screen and (max-width: 992px) {
-    .about {
-        flex-wrap: wrap;
-    }
-    /*heading wraps under image on smaller screens*/
-    .about img {
-        width: 41vw;
-    }
-    .about h3 {
-        width: 100%;
-        margin-left: 20px;
-    }
-    /*resizes heading and image on smaller screens to remain legible*/
-}
-
 .work {
-    margin-top: 50px;
-    padding: 20px;
+    margin: 80px;
+    padding: 25px;
     width: 65vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     left: 10vw;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkgreen;
 }
 
 
-picture {
-    position: relative; /*picture element position is set to relative to allow for absolute positioning of child elements*/
+div {
+    position: relative; /*div element position is set to relative to allow for absolute positioning of child elements*/
     text-align: center;
 }
 
@@ -122,12 +109,11 @@ picture {
 /*first image in work section*/
 .top img {
     width: 60vw;
-    margin-top: 10vh;
 }
 
 .work h2 {
-    left: -13vw;
-    top: -5vh; 
+    left: -10vw;
+    top: -10vh; 
     /*negative values move the heading left and up relative to the section*/
 }
 
@@ -147,12 +133,29 @@ picture {
     top: 15%;
 }
 
-/*makes image layout in work section responsive to screen size*/
+/*makes layout responsive to screen size*/
 @media screen and (max-width: 992px) {
-    .work img {
-        width: 60vw;
+    .about {
+        flex-wrap: wrap; /*heading wraps under image in about section*/
     }
-    /*images will stack to provide better visibility on smaller screens*/
+
+    .about img {
+        width: 41vw;
+    }
+
+    .about h3 {
+        width: 100%;
+        margin-left: 20px;
+        /*resizes heading and image in about section to remain legible*/
+    }
+   
+    .work {
+        margin: 80px 0; /*keeps the work images centered*/
+    }
+    .work img {
+        width: 60vw; /*resizes work images to stack*/
+    }
+    
 }
 
 footer {
