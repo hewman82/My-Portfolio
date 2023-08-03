@@ -10,7 +10,7 @@ header {
 
 h1 {
     padding: 10px 20px;
-    color: #01796f;
+    color: #01796f; /*forest green*/
 }
 
 nav {
@@ -37,14 +37,16 @@ header a {
 
 section {
     margin-left: 5vw;
-    position: relative;
+    position: relative; /*allows for absolute positioning of child elements*/
+    
 }
 
 section h2 {
-    position: absolute;
+    position: absolute; /*allows section headings to be positioned relative to their parent elements*/
+    
 }
 
-.about{
+.about {
     padding: 20px;
     display: flex;
     flex-wrap: nowrap;
@@ -53,10 +55,11 @@ section h2 {
 .about h2 {
     top: 0vh;
     left: -5vw;
+    /*heading is positioned at the top and to the left of the section*/
 }
 
 .about img {
-    width: 21vw; /*declaring one dimension of the image makes the other dimension automatically set to retain aspect ratio*/
+    width: 21vw;
     margin-top: 40px;
     padding-left: 20px;
 }
@@ -75,7 +78,7 @@ section h2 {
     .about {
         flex-wrap: wrap;
     }
-    /*heading will wrap under image*/
+    /*heading wraps under image on smaller screens*/
     .about img {
         width: 41vw;
     }
@@ -83,6 +86,7 @@ section h2 {
         width: 100%;
         margin-left: 20px;
     }
+    /*resizes heading and image on smaller screens to remain legible*/
 }
 
 .work {
@@ -95,9 +99,9 @@ section h2 {
     left: 10vw;
 }
 
-/*picture element position is set to relative to allow for absolute positioning of child elements*/
+
 picture {
-    position: relative;
+    position: relative; /*picture element position is set to relative to allow for absolute positioning of child elements*/
     text-align: center;
 }
 
@@ -124,7 +128,7 @@ picture {
 .work h2 {
     left: -13vw;
     top: -5vh; 
-    /*negative values move the heading left and up*/
+    /*negative values move the heading left and up relative to the section*/
 }
 
 .work h3 {
@@ -135,10 +139,6 @@ picture {
     top: 0%;
     width: 50%;
     padding: 5px;
-}
-
-.work h3:hover .work img{
-    border: 5px solid darkblue;
 }
 
 /*heading for top image is positioned independently to adjust for different image dimensions*/
@@ -160,11 +160,4 @@ footer {
     border-top: 10px solid saddlebrown;
     /*styling for nav and anchor elements in the footer comes from nav and nav a styling further up*/
 }
-
-
-
-
-
-
-
 
