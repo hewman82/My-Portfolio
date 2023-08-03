@@ -9,8 +9,10 @@ header {
 }
 
 h1 {
-    padding: 10px 20px;
-    color: #01796f; /*forest green*/
+    padding: 20px;
+    color: black;
+    background-color: white;
+    border: 3px solid turquoise;
 }
 
 nav {
@@ -61,7 +63,7 @@ section h2 {
 .about img {
     width: 21vw;
     margin-top: 40px;
-    padding-left: 20px;
+    border: 5px solid black;
 }
 
 .about h3 {
@@ -82,8 +84,8 @@ section h2 {
     justify-content: center;
     flex-wrap: wrap;
     left: 10vw;
-    border: 5px solid grey;
-    box-shadow: 0 0 40px rgb(54, 51, 51);
+    border: 5px solid black;
+    box-shadow: 0 0 10px;
 }
 
 
@@ -119,8 +121,8 @@ div {
 }
 
 .work h3 {
-    background-color: grey;
-    border: 2px solid orange;
+    background-color: white;
+    border: 2px solid yellow;
     position: absolute; /*headings in work section are absolutely positioned to overlay over images*/
     left: 5%;
     top: 0%;
@@ -153,15 +155,26 @@ div {
     .work {
         margin: 80px 0; /*keeps the work images centered*/
     }
+
     .work img {
         width: 60vw; /*resizes work images to stack*/
+    }
+
+    .top h3 {
+        left: 5%;
+        /*aligns heading to the left to match other images in work section*/
     }
     
 }
 
 footer {
-    padding-top: 20px;
     border-top: 10px solid saddlebrown;
-    /*styling for nav and anchor elements in the footer comes from nav and nav a styling further up*/
 }
 
+footer nav {
+    padding: 25px;
+}
+
+footer h2 {
+    margin-left: 10px;
+}
