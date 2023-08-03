@@ -13,4 +13,4 @@ Click the page link provided to see my work! Open the html and css or inspect th
 Licensed Under MIT License.
 
 ## Project Link
-![My Portfolio](https://hewman82.github.io/My-Portfolio/)
+.[My Portfolio](https://hewman82.github.io/My-Portfolio/)
