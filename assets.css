@@ -74,6 +74,7 @@ section h2 {
 }
 
 .work {
+    background-color: black;
     margin: 80px;
     padding: 25px;
     width: 65vw;
@@ -81,15 +82,15 @@ section h2 {
     justify-content: center;
     flex-wrap: wrap;
     left: 10vw;
-    border-width: 5px;
-    border-style: solid;
-    border-color: darkgreen;
+    border: 5px solid grey;
+    box-shadow: 0 0 40px rgb(54, 51, 51);
 }
 
 
 div {
     position: relative; /*div element position is set to relative to allow for absolute positioning of child elements*/
     text-align: center;
+    background-color: black;
 }
 
 /*sizes images in work section and makes them slightly transparent*/
@@ -129,8 +130,8 @@ div {
 
 /*heading for top image is positioned independently to adjust for different image dimensions*/
 .top h3 {
-    left: 20%;
-    top: 15%;
+    left: 25%;
+    top: 1%;
 }
 
 /*makes layout responsive to screen size*/
